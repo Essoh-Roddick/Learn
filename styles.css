@@ -1,0 +1,109 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 100vh;   /* full viewport height */
+  overflow-x:auto;
+  white-space: nowrap;
+}
+
+#headerW {
+  background-color: rgb(168, 168, 217);
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  font-size: 30px;
+  flex: 0 0 auto;      /* header stays at top */
+  height: 100px;
+}
+
+.welcomeP {
+  flex: 1;             /* take all remaining space */
+  border: 2px solid rgb(122,122,188);
+  margin:-10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center vertically */
+  line-height: 1;
+ /* align-items: center;   */  /* center horizontally */
+}
+
+#question {
+  color: rgb(14, 14, 110);
+  text-align: center;
+  font-size: 60px;
+  height: 10px;
+}
+#assure {
+  color: rgb(14, 14, 110);
+  font-size: 30px;
+  margin-left:40px;
+}
+#inspire {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+#image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border:1px solid rgb(122, 122, 188);
+  cursor: pointer;
+}
+footer {
+  background-color: rgb(122, 122, 188);
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 auto;      /* footer stays at bottom */
+}
+
+
+
+/*
+body {
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column ;
+    min-height: 100vh;
+}
+
+
+#headerW{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(122, 122, 188);
+    min-height: 15vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.welcomeP {
+    border: 2px solid rgb(122,122, 188);
+    margin:0;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+#question{
+    color: rgb(14, 14, 110);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size:60px ;
+}
+
+footer{
+    background-color:rgb(122, 122, 188);
+    height: 10%;
+} */
