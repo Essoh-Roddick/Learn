@@ -106,7 +106,9 @@ displ();
  }
 setI();  */
 
-// JS objects
+
+/*
+// ------------------ JS objects
 
 const obj1 = document.getElementById("obj1");
 const obj2 = document.getElementById("obj2");
@@ -200,4 +202,83 @@ text = arr.toString();  */
 for (let x in person){
     text += x + ": " + person[x] + "<br>";
 }   */
-  obj3.innerHTML = text
+ // obj3.innerHTML = text; 
+  /* */
+         
+
+// ------------- JS Dates
+
+
+// ------------- JS Arrays
+const arr1 = document.getElementById("arr1");
+const arr2 = document.getElementById("arr2");
+const arr3 = document.getElementById("arr3");
+
+const car = ["Volvo", "Ford", "Dodge" ];
+car.push("Toyota");
+
+let text = "<ul>";
+for(let i =0; i < car.length; i++){
+    text += "<li>" + car[i] + "</li>" ; //  Add new element to the end of the list
+}
+text += "</ul>";
+ arr1.innerHTML = text;  
+
+const obj = {
+    name : "John",
+    age : "35",
+    cars : [
+        {name: "Ford",  models: ["Fiesta", "Focus", "Mustang"]},
+        {name: "BMW", models: ["320", "X3", "X5"]},
+        {name: "Fiat", models: ["500", "Panda"]}
+    ]
+}
+
+let x = "";
+for (let i in obj.cars) {
+  x += "<h2>" + obj.cars[i].name + "</h2>";
+  for (let j in obj.cars[i].models) {
+    x += obj.cars[i].models[j] + "<br>";
+  }
+}
+ arr2.innerHTML = x; 
+
+
+const myArr = [
+  {name:"X00",price:100 },
+  {name:"X01",price:100 },
+  {name:"X02",price:100 },
+  {name:"X03",price:100 },
+  {name:"X04",price:110 },
+  {name:"X05",price:110 },
+  {name:"X06",price:110 },
+  {name:"X07",price:110 },
+  {name:"X08",price:120 },
+  {name:"X09",price:120 },
+  {name:"X10",price:120 },
+  {name:"X11",price:120 },
+  {name:"X12",price:130 },
+  {name:"X13",price:130 },
+  {name:"X14",price:130 },
+  {name:"X15",price:130 },
+  {name:"X16",price:140 },
+  {name:"X17",price:140 },
+  {name:"X18",price:140 },
+  {name:"X19",price:140 }
+];
+
+myArr.sort( (p1, p2) => {
+  if (p1.price < p2.price) return -1;
+  if (p1.price > p2.price) return 1;
+  return 0;
+});
+
+let txt = "";
+myArr.forEach(myFunction);
+
+function myFunction(value) {
+  txt += value.name + " " + value.price + "<br>"; 
+}
+arr3.innerHTML = txt;
+
+
