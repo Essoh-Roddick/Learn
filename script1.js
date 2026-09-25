@@ -269,16 +269,37 @@ const myArr = [
 
 myArr.sort( (p1, p2) => {
   if (p1.price < p2.price) return -1;
-  if (p1.price > p2.price) return 1;
-  return 0;
+  else if (p1.price > p2.price) return 1;
+  else return 0;
 });
+//  myArr.sort((p1, p2) => p1.price - p2.price);
+
 
 let txt = "";
+
+/*
+
 myArr.forEach(myFunction);
 
 function myFunction(value) {
   txt += value.name + " " + value.price + "<br>"; 
-}
-arr3.innerHTML = txt;
+}  */   
+ 
+  // for of loop   *** Recall for in loop is used for objects and for of loop is used for arrays
+  // Though it'll work thesame just replace the of with in  
+/*  for (let x of car){
+    txt += x + ", ";
+}  */
+
+const numbers = [45, 4, 9, 16, 25];
+numbers.forEach((value, index, array) => {
+  txt +=index + " : " + value + " | " + array + "<br>" ;
+});
+arr3.innerHTML = txt; 
+
+// RegExp stuff
+const pattern = /^W3Schools/;
+let text1 = "W3Schools Tutorial";
+let result = pattern.test(text1); // true
 
 
