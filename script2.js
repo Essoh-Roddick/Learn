@@ -54,3 +54,16 @@ errbtn1.addEventListener("click", throwtest);
 ];
 
 console.table(users);
+
+/*
+let x = 15 * 5;
+debugger;
+console.log(x);   */
+
+/*       // fetch()
+fetch("data.json")
+.then(response => response.json())
+.then(data => console.log(data));  */
+
+
+
